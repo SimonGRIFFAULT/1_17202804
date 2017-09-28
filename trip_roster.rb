@@ -35,11 +35,8 @@ class TripRoster
   def FindTripForCar(fleet, trip_collect)
     copy_fleet = fleet.clone
     copy_trip_collect = trip_collect.clone
-    fleet_length = fleet.length()
-    @cars_distance = Array.new(fleet_length) #in this array, are the cars sorted with it's maximum distance
-    max_distance = 0                         # (the maximum distance the car can drive)
 
-    while (fleet != {})
+    while (copy_fleet != {} && copy_trip_collect != {})
       FindMaxDistanceCar(copy_fleet)
       copy_fleet.delete(@max_id_car) #at the end, copy_fleet no longer exist
 
