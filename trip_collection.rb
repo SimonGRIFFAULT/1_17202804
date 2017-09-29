@@ -6,9 +6,13 @@ class TripCollection
     @trips = {}
   end
 
+  def trips
+    @trips
+  end
+
   def AddTrip(trip)
-    trip_id = trip.GetTripId
-    @trips[trip_id] = trip.GetDistance
+    trip_id = trip.Id
+    @trips[trip_id] = trip.Distance
   end
 
 

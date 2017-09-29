@@ -13,7 +13,10 @@ class TripRoster
   def FindMaxDistanceCar(fleet)
     max_distance = 0
 
-    fleet.each do |id_car|
+    print fleet.cars
+
+    fleet.each do |id_car_s|
+      id_car = Integer(id_car_s)
       car_dist = (id_car.GetLitresInTank()) * (id_car.GetKmPerLitre())
       if ([max_distance, car_dist].max == car_dist)
         max_distance = car_dist
@@ -24,12 +27,12 @@ class TripRoster
 
   def FindMaxDistanceTrip(trip_collect)
     max_distance = 0
-    trip_collect.each do |id_trip, distance|
+    trip_collect.each { |id_trip, distance|
       if ([max_distance, distance].max == distance)
         max_distance = distance
         @max_id_trip = id_trip
       end
-    end
+    }
   end
 
   def FindTripForCar(fleet, trip_collect)

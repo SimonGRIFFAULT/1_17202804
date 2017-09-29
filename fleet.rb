@@ -1,3 +1,4 @@
+require_relative 'car.rb'
 
 class Fleet
 
@@ -5,8 +6,12 @@ class Fleet
     @cars = {}
   end
 
+  def cars
+    @cars
+  end
+
   def AddCar(car)
-    id = car.GetCarId
+    id = car.Id
     @cars[id] = car
   end
 

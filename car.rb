@@ -6,16 +6,16 @@ class Car
     @km_per_litre = km
   end
 
-  def GetCarId()
-    self.id
+  def Id
+    @id
   end
 
-  def GetLitresInTank()
-    self.litres_in_tank
+  def LitresInTank
+    @litres_in_tank
   end
 
-  def GetKmPerLitre()
-    self.km_per_litre
+  def KmPerLitre
+    @km_per_litre
   end
 
 end

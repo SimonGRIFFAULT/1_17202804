@@ -5,12 +5,12 @@ class Trip
     @distance = distance
   end
 
-  def GetTripId()
-    self.id
+  def Id
+    @id
   end
 
-  def GetDistance()
-    self.distance
+  def Distance()
+    @distance
   end
 
 end
