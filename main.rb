@@ -25,8 +25,9 @@ IO.foreach('trips.txt') do |line|
   trips.AddTrip(trip)
 end
 
-
-
 trip_roast = TripRoster.new
-trip_roast.FindTripForCar(fleet, trips)
+collection_pair = trip_roast.FindTripForCar(fleet, trips)
+collection_pair.each do |x|
+  puts "#{x[0]} is undertaken by #{x[1]}"
+end
 

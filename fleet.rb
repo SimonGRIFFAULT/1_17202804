@@ -15,6 +15,4 @@ class Fleet
     @cars[id] = car
   end
 
-
-
 end
