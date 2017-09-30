@@ -1,5 +1,3 @@
-require_relative 'car.rb'
-
 class Fleet
 
   def initialize()

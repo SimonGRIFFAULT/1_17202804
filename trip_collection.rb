@@ -1,5 +1,3 @@
-require_relative 'trip.rb'
-
 class TripCollection
 
   def initialize()

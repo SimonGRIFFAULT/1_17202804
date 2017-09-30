@@ -6,7 +6,7 @@ require_relative 'car.rb'
 
 
 fleet = Fleet.new
-IO.foreach('cars.txt') do |line|
+IO.foreach('cars.txt') do |line| #create and fill a hashtable with the cars from the input file 'cars.txt'
   data = line.split
   id = data[0]
   litres_in_tank = data[1]
@@ -17,7 +17,7 @@ end
 
 
 trips = TripCollection.new
-IO.foreach('trips.txt') do |line|
+IO.foreach('trips.txt') do |line|  #create and fill a hashtable with the trips from the input file 'cars.txt'
   data = line.split
   trip_id = data[0]
   trip_distance = data[1]
