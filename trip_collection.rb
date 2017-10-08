@@ -9,8 +9,7 @@ class TripCollection
   end
 
   def AddTrip(trip)
-    trip_id = trip.Id
-    @trips[trip_id] = trip.Distance
+    @trips[trip.Id] = trip.Distance
   end
 
 

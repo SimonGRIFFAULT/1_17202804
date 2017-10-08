@@ -4,6 +4,10 @@ class TripRoster
     @collection_pairs = []
   end
 
+  def collection_pairs
+    @collection_pairs
+  end
+
   def FindMaxDistanceCar(fleet) #find the car wich can travel the longer distance and return it's id
     max_distance = -1
     max_id_car = -1
